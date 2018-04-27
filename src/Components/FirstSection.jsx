@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-// import Image from '../images/kouki4.jpg'
+import { Element } from 'react-scroll'
 
 class FirstSection extends Component {
   render() {
     return (
       <section className="about" id="about">
-        <h2 className="heading">About Me</h2>
+      <Element name="test1" className="element"><h2 className="heading">About Me</h2></Element>
         <div className="content-wrapper">
           <div className="content-1">
             <div className="about-app-box">
@@ -20,7 +20,9 @@ class FirstSection extends Component {
             <p>
               はじめまして!! 吉本光輝(<a href="https://github.com/yoshimoto8">@yoshimoto8</a>)と申します。<br/>
               2016年からプログラミングを始め、某プログラミングスクールのAIメンターとして働いてました。<br/>
-              その後、インターンなどでReact/Redux/Ruby on Railsを使ったプロダクト開発を経験。
+              その後、インターンなどでReact/Redux/Ruby on Railsを使ったプロダクト開発を経験。 <br/>
+              <br/>
+              好きな言語は、Javascript, Pythonです。現在は関数型プログラミングに興味あり。
             </p>
           </div>
         </div>

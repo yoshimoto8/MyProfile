@@ -2,9 +2,7 @@ html {
   font-size: 62.5%;
 }
 .body {
-  height: 100%;
-  width: 100%;
-  background: #151515 url('../src/images/haikei.jpeg') no-repeat fixed left bottom;
+  background: #151515 url('../src/images/home.jpeg') no-repeat fixed left bottom;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -17,3 +15,6 @@ html {
 
 @import "./styles/firstSection.scss";
 @import "./styles/header.scss";
+@import "./styles/secondSection.scss";
+@import "./styles/thirdSection.scss";
+@import "./styles/footer.scss";
