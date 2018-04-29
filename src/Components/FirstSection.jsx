@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Element } from 'react-scroll'
-import ProfleUser from '../../src/images/kouki4.jpg'
+import ProfleUser from '../images/kouki4.jpg'
 
 class FirstSection extends Component {
   render() {
