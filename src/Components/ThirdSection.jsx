@@ -2,6 +2,8 @@ import React, { Component } from 'React'
 import Slider from "react-slick";
 import Modal from 'react-modal';
 import { Element } from 'react-scroll'
+import MilImage from '../images/mil.jpeg'
+import ProfileImage from '../images/profile.jpeg'
 
 class ThirdSection extends Component {
   constructor() {
@@ -58,10 +60,10 @@ class ThirdSection extends Component {
         <Element name="test3" className="element"><h2 className="heading">Portfolio</h2></Element>
         <Slider {...settings}>
           <div>
-            <img className="portfolio-img" src="../src/images/mil.jpeg" alt="" onClick={this.handleChangeModal}/>
+            <img className="portfolio-img" src={MilImage} alt="" onClick={this.handleChangeModal}/>
           </div>
           <div>
-            <img className="portfolio-img" src="../src/images/profile.jpeg" alt="" onClick={this.handlePortfolioModalIsOpen}/>
+            <img className="portfolio-img" src={ProfileImage} alt="" onClick={this.handlePortfolioModalIsOpen}/>
           </div>
         </Slider>
         <Modal
@@ -71,7 +73,7 @@ class ThirdSection extends Component {
           contentLabel="Example Modal"
         >
         <div className="modal-content-1" style={{display: "flex"}}>
-          <img src="../src/images/mil.jpeg" height="300px" width="500px"/>
+          <img src={MilImage} height="300px" width="500px"/>
           <div style={{margin: 20}}>
             <h2>アプリ名： MiLMiL</h2>
             <h2>開発期間: ２０日</h2>
@@ -95,7 +97,7 @@ class ThirdSection extends Component {
           contentLabel="Example Modal"
         >
           <div className="modal-content-1" style={{display: "flex"}}>
-            <img src="../src/images/profile.jpeg" height="300px" width="500px"/>
+            <img src={ProfileImage} height="300px" width="500px"/>
             <div style={{margin: 20}}>
               <h2>Portfolio</h2>
               <h2>開発期間: 1日</h2>
