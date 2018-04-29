@@ -25,12 +25,24 @@
     display: flex;
     justify-content: space-around;
     width: 80%;
-    margin: 50px auto 0;
+    margin: 0 auto 0;
     table-layout: fixed;
     .skills-box {
-      .skills-title {
-        margin: 20px 20px;
-        font-size: 2rem;
+      .title-box{
+        margin-bottom: 30px;
+        .skills-title {
+          margin: {
+            top: 20px;
+            bottom: 5px;
+            left: 20px;
+            right: 20px;
+          }
+          font-size: 2.5rem;
+        }
+        .skills-title-english {
+          font-size: 18px;
+          opacity: 0.5;
+        }
       }
       .skills-text {
         margin: 0 20px;
@@ -38,7 +50,7 @@
       }
     }
   }
-  img {
+  .img {
     height: 150px;
     width: 150px;
   }

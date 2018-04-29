@@ -7,10 +7,13 @@ class ThirdSection extends Component {
   constructor() {
     super();
     this.state = {
-      modalIsOpen: false
+      modalIsOpen: false,
+      portfolioModalIsOpen: false
     };
     this.handleChangeModal = this.handleChangeModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
+    this.handlePortfolioModalIsOpen = this.handlePortfolioModalIsOpen.bind(this);
+    this.closePortfolioModal = this.closePortfolioModal.bind(this)
   }
 
   handleChangeModal() {
@@ -19,6 +22,14 @@ class ThirdSection extends Component {
 
   closeModal() {
     this.setState({modalIsOpen: false})
+  }
+
+  handlePortfolioModalIsOpen() {
+    this.setState({portfolioModalIsOpen: true})
+  }
+
+  closePortfolioModal(){
+    this.setState({portfolioModalIsOpen: false})
   }
 
   render() {
@@ -47,20 +58,18 @@ class ThirdSection extends Component {
         <Element name="test3" className="element"><h2 className="heading">Portfolio</h2></Element>
         <Slider {...settings}>
           <div>
-            <img className="milmil-img" src="../src/images/mil.jpeg" alt="" onClick={this.handleChangeModal}/>
+            <img className="portfolio-img" src="../src/images/mil.jpeg" alt="" onClick={this.handleChangeModal}/>
           </div>
           <div>
-            <h3>2</h3>
+            <img className="portfolio-img" src="../src/images/profile.jpeg" alt="" onClick={this.handlePortfolioModalIsOpen}/>
           </div>
         </Slider>
         <Modal
           isOpen={this.state.modalIsOpen}
-          onAfterOpen={this.afterOpenModal}
           onRequestClose={this.closeModal}
           style={customStyles}
           contentLabel="Example Modal"
         >
-
         <div className="modal-content-1" style={{display: "flex"}}>
           <img src="../src/images/mil.jpeg" height="300px" width="500px"/>
           <div style={{margin: 20}}>
@@ -77,6 +86,29 @@ class ThirdSection extends Component {
         <div style={{float: "right"}}>
         <button onClick={this.closeModal}>close</button>
         </div>
+        </Modal>
+
+        <Modal
+          isOpen={this.state.portfolioModalIsOpen}
+          onRequestClose={this.closePortfolioModal}
+          style={customStyles}
+          contentLabel="Example Modal"
+        >
+          <div className="modal-content-1" style={{display: "flex"}}>
+            <img src="../src/images/profile.jpeg" height="300px" width="500px"/>
+            <div style={{margin: 20}}>
+              <h2>Portfolio</h2>
+              <h2>開発期間: 1日</h2>
+              <h2>詳細: <a href="https://qiita.com/yoshimo123/items/e9929c7c914b8ef7981a">https://qiita.com/yoshimo123/items/e9929c7c914b8ef7981a</a></h2>
+              <h2>Github: <a href="https://github.com/yoshimoto8/MyProfile">https://github.com/yoshimoto8/MyProfile</a></h2>
+              <font size="3">
+                自分のことを簡単に知ってもらうためにReact/HTML/SASSを使用し作成しました。
+              </font>
+            </div>
+          </div>
+          <div style={{float: "right"}}>
+          <button onClick={this.closePortfolioModal}>close</button>
+          </div>
         </Modal>
       </section>
     )
