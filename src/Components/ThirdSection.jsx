@@ -99,7 +99,7 @@ class ThirdSection extends Component {
             <div style={{margin: 20}}>
               <h2>Portfolio</h2>
               <h2>開発期間: 1日</h2>
-              <h2>詳細: <a href="https://qiita.com/yoshimo123/items/e9929c7c914b8ef7981a">https://qiita.com/yoshimo123/items/e9929c7c914b8ef7981a</a></h2>
+              <h2>詳細: <a href="https://yoshimoto8.github.io/MyProfile/">https://yoshimoto8.github.io/MyProfile/</a></h2>
               <h2>Github: <a href="https://github.com/yoshimoto8/MyProfile">https://github.com/yoshimoto8/MyProfile</a></h2>
               <font size="3">
                 自分のことを簡単に知ってもらうためにReact/HTML/SASSを使用し作成しました。
