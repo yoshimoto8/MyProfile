@@ -13,6 +13,13 @@ module.exports = {
 				},
 			},
 			{
+				test: /\.(jpg|png|svg|jpeg)$/,
+				loader: 'url-loader',
+				options: {
+					limit: 25000,
+				},
+			},
+			{
 				test: /\.html$/,
 				use: [
 					{
