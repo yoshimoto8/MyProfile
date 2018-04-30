@@ -14,6 +14,9 @@ class Header extends Component {
             <Link activeClass="active" className="test2" to="test3" spy={true} smooth={true} duration={500} >
               <h4 class="header-subtitle animate-pop-in">Portfolio</h4>
             </Link>
+            <Link activeClass="active" className="test2" to="test4" spy={true} smooth={true} duration={500} >
+              <h4 class="header-subtitle animate-pop-in">story</h4>
+            </Link>
           </div>
           <Link activeClass="active" className="test1" to="test1" spy={true} smooth={true} duration={500} >
             <a href="#"><span></span></a>

@@ -5,6 +5,7 @@ import FirstSection from './Components/FirstSection'
 import SecondSection from './Components/SecondSection'
 import ThirdSection from './Components/ThirdSection'
 import Footer from './Components/Footer'
+import FourthSection from './Components/FourthSection'
 
 class App extends React.Component {
   render() {
@@ -14,6 +15,7 @@ class App extends React.Component {
         <FirstSection />
         <SecondSection />
         <ThirdSection />
+        <FourthSection />
         <Footer />
       </div>
     )
