@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Element } from 'react-scroll'
 import ProfleUser from '../images/kouki4.jpg'
 
-class FirstSection extends Component {
+class SelfIntro extends Component {
   render() {
     return (
       <section className="about" id="about">
@@ -10,12 +10,9 @@ class FirstSection extends Component {
         <div className="content-wrapper">
           <div className="content-1">
             <div className="about-app-box">
-              <img src={ProfleUser} className="user-image" alt=""/>
-              <div className="about-app-text">
-              </div>
+              <img src={ProfleUser} className="user-image"/>
             </div>
           </div>
-
           <div className="content-2">
             <h2>自己紹介</h2>
             <p>
@@ -32,4 +29,4 @@ class FirstSection extends Component {
   }
 }
 
-export default FirstSection
+export default SelfIntro

@@ -4,7 +4,7 @@ import FaUser from 'react-icons/lib/fa/user'
 import MdCreate from 'react-icons/lib/md/create'
 import IoSocialGithub from 'react-icons/lib/io/social-github'
 
-const SecondSection = () => {
+const MySkills = () => {
   return (
     <section className="skills">
       <Element name="test2" className="element"><h2 className="heading">My Skill</h2></Element>
@@ -54,4 +54,4 @@ const SecondSection = () => {
   )
 }
 
-export default SecondSection
+export default MySkills
