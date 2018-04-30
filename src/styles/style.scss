@@ -1,0 +1,21 @@
+html {
+  font-size: 62.5%;
+}
+.body {
+  background: #151515 url('../../src/images/home.jpeg') no-repeat fixed left bottom;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: Raleway, "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+@import "./selfintro.scss";
+@import "./header.scss";
+@import "./myskills.scss";
+@import "./portfolios.scss";
+@import "./story.scss";
+@import "./footer.scss";
