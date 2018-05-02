@@ -18,6 +18,7 @@ class Header extends Component {
               <h4 class="header-subtitle animate-pop-in">story</h4>
             </Link>
           </div>
+          
           <Link activeClass="active" className="test1" to="test1" spy={true} smooth={true} duration={500} >
             <a href="#"><span></span></a>
           </Link>
